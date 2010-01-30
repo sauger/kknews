@@ -35,8 +35,10 @@ $(function(){
 		if(key1 == $(this).attr('id')){
 		   key1  = "";
 		   h1 = -1;	
+		   $('.l2').parent().show();
 		}else{
 		   key1 = $(this).attr('id');
+		   $('#l23,#l25,#l28,#l210,#l32,#l33').parent().hide();
 		}
 		
 		$('.l1').not(this).removeClass('ssfont3_sel');
@@ -56,8 +58,10 @@ $(function(){
 		if(key2 == $(this).attr('id')){
 		   key2  = "";
 		   h2 = -1;	
+		   $('#l31').parent().show();
 		}else{
 		   key2 = $(this).attr('id');
+		   $('#l31').parent().hide();
 		}
 		$('.l2').not(this).removeClass('ssfont3_sel');
 		refresh_ssnr();
