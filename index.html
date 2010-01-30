@@ -13,6 +13,7 @@
 	<script type="text/javascript" src="javascript/jquery-ui-1.7.2.custom.min.js"></script>
 	<script src="scripts/swfobject.js" language="javascript"></script>
 	<script src="scripts/masterhead.js" language="javascript"></script>	
+	<script src="javascript/sortable.js" language="javascript"></script>
     <link href="css/font.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -227,6 +228,77 @@
 						</div>
 					</div>
 			</div>
+			<!-- sortable start -->
+			<div id="sortable">
+				<div id=m_l_m>
+				<div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div>
+				<div id=title><a href="">资讯</a></div>
+				<div id=more><a href="">更多</a></div>
+				<div id=context>
+					<div class=content>
+						<img width="111" height="83" src="images/b1.jpg" id="pop_img">
+						<div class=c_title><a href="">[杨紫琼眉目含情]</a></div>
+						<div class=c_content><a href="">《剑雨江湖》横店拍摄现场开放媒体探班</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b2.jpg">
+						<div class=c_title><a href="">[洪金宝捧场庆典]</a></div>
+						<div class=c_content><a href="">巨力集团上市庆典晚会在河北保定举行</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b3.jpg">
+						<div class=c_title><a href="">[杰克逊终身成就]</a></div>
+						<div class=c_content><a href="">本届格莱美将注定充满感动时刻</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b4.jpg">
+						<div class=c_title><a href="">[臧天朔聚众斗殴]</a></div>
+						<div class=c_content><a href="">臧天朔聚众斗殴案终审结果出炉</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b5.jpg">
+						<div class=c_title><a href="">[吴奇隆不想结婚]</a></div>
+						<div class=c_content><a href="">吴奇隆与马雅舒聚少离多，交往5年</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b6.jpg">
+						<div class=c_title><a href="">[刘谦谈跪拜]</a></div>
+						<div class=c_content><a href="">网络上盛传一个传闻，说刘谦在日本</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b7.jpg">
+						<div class=c_title><a href="">[大河之舞]</a></div>
+						<div class=c_content><a href="">主创莅临蓉城 世界舞王教人跳踢踏</a></div>
+					</div>
+					
+					<div class=content>
+						<img width="111" height="83" src="images/b8.jpg">
+						<div class=c_title><a href="">[神话新闻]</a></div>
+						<div class=c_content><a href="">胡歌再次出演电视剧神话</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b9.jpg">
+						<div class=c_title><a href="">[黄山渤海]</a></div>
+						<div class=c_content><a href="">黄山有成旅游热门景点</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b10.jpg">
+						<div class=c_title><a href="">[各地]</a></div>
+						<div class=c_content><a href="">爆笑恶搞：柏芝失业卖馒头</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b11.jpg">
+						<div class=c_title><a href="">[全球]</a></div>
+						<div class=c_content><a href="">《夏日大作战》参展柏林</a></div>
+					</div>
+					<div class=content>
+						<img width="111" height="83" src="images/b12.jpg">
+						<div class=c_title><a href="">[社会]</a></div>
+						<div class=c_content><a href="">苦命啊！大学生打工事件簿</a></div>
+					</div>
+				</div>
+			</div>
+			
 			<div id=m_l_m>
 				<div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div>
 				<div id=title><a href="">资讯</a></div>
@@ -295,11 +367,14 @@
 					</div>
 				</div>
 			</div>
-				<div id=m_l_b>
-					<div class=pic2 style="margin-left:135px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div>
-					<div id=more><a href="">更多</a></div>	
-					<div id=content><img src="images/dh.jpg"></div>
-				</div>
+			</div>
+			<!-- end sortable -->
+			
+			<div id=m_l_b>
+				<div class=pic2 style="margin-left:135px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div>
+				<div id=more><a href="">更多</a></div>	
+				<div id=content><img src="images/dh.jpg"></div>
+			</div>
 
 			</div>
 			<div id=m_r>
@@ -346,19 +421,10 @@
 </html>
 <script>
 	$(function(){
+		
 		var poped = false;
 		$('#pop_img').hover(function(){
-			//if (poped){
-				//$('#pop_l1').hide('clip');
-			//	return ;
-				//poped = false;
-			//}else{
-			//	$('#pop_l1').show('');
-			//	poped = true;
-			//}
 			$('#pop_l1').show('');
-			
-			
 		});
 		$('#popdiv').mouseout(function(){
 			$("#m_l_m").mouseover(function(){
@@ -367,7 +433,6 @@
 			})
 		});
 		
-			
 		$('#close_a').click(function(e){
 			e.preventDefault();
 			poped = false;
@@ -386,22 +451,14 @@
 			
 		});
 		
-		/*
-		$('.menubox').mouseout(function(e){
-			if($(e.target).attr('class')== 'menu_box_box'||$(e.target).attr('tagName')== 'A') return;
-			if($('#menu').css('display') != 'none'){
-				$('#menu').hide('');
-				popmen = '';
-			}
-		});
-		*/
-		
 		$("#m_flash1").mouseover(function(){
 			if($('#menu').css('display') != 'none'){
 				$('#menu').hide('blind');
 				popmen = '';
 			}
 		});
+		
+		
 		
 	});
 	Masthead.writeSwf();
