@@ -231,18 +231,45 @@
 					</div>
 			</div>
 			<div class=m_l_m>
-				<div class=title><div class="styleset"><img src="images/blockstyle.gif"><img src="images/blockstyle.gif"><img src="images/blockstyle.gif"></div><div class="resetstyle"></div></div>
-				<div class=stylecontent>
-					<div class="stylecontext1" style="margin-left:40px;"><input type="checkbox" checked="checked">本地视频新闻</div><div class="stylecontext2"><input type="checkbox">科教视频新闻</div><div class="stylecontext2"><input type="checkbox">社会视频新闻</div><div class="stylecontext2"><input type="checkbox">更多视频新闻</div>
-					<div class="stylecontext2" style="margin-left:40px;"><input type="checkbox">全球视频新闻</div><div class="stylecontext1"><input type="checkbox" checked="checked">生活视频新闻</div><div class="stylecontext2"><input type="checkbox">娱乐视频新闻</div><div class="stylecontext1"><input type="checkbox" checked="checked">体育视频新闻</div>
-					<div class="stylecontext2" style="margin-left:40px;"><input type="checkbox">各地视频新闻</div><div class="stylecontext2"><input type="checkbox">财经视频新闻</div>
-					<div class="stylebutton"><button>确定保存</button></div>
+				<div class=title><div class="styleset" style="cursor:pointer;" id="div_styleset"><img src="images/extract.jpg" style="cursor:pointer;" id="img_cfg"></div><div class="resetstyle"></div></div>
+				<div class=stylecontent style="display:none;" id="div_cfg">
+					<div class="stylecontext2" style="margin-left:40px;">
+						<input type="checkbox" checked="checked"><span class="category_span">本地视频新闻</span>
+					</div>
+					<div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">科教视频新闻</span>
+					</div>
+					<div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">社会视频新闻</span>
+					</div>
+					<div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">更多视频新闻</span>
+					</div>
+					<div class="stylecontext1" style="margin-left:40px;">
+						<input type="checkbox"><span class="category_span">全球视频新闻</span>
+					</div>
+					<div class="stylecontext2">
+						<input type="checkbox" checked="checked"><span class="category_span">生活视频新闻</span>
+					</div>
+					<div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">娱乐视频新闻</span>
+					</div>
+					<div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">体育视频新闻</span>
+					</div>
+					<div class="stylecontext1" style="margin-left:40px;">
+						<input type="checkbox"><span class="category_span">各地视频新闻</span>
+					</div><div class="stylecontext1">
+						<input type="checkbox"><span class="category_span">财经视频新闻</span></div>
+					<div class="stylebutton">
+						<button>确定保存</button>
+					</div>
 				</div>
 			</div>
 			<!-- sortable start -->
 			<div id="sortable">
 				<div class=m_l_m>
-				<div class=title><div class="title_name">公民新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
+				<div class=title style="cursor:default"><div class="title_name">本地视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
 				<div class=m_context>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b1.jpg" id="pop_img">
@@ -279,7 +306,7 @@
 			</div>
 			
 			<div class=m_l_m>
-				<div class=title><div class="title_name">公民新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
+				<div class=title><div class="title_name">生活视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
 				<div class=m_context>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b7.jpg">
@@ -321,8 +348,9 @@
 
 			</div>
 			<div id=m_r>
+				<div id="sortable1">
 				<div id=m_r_t>
-						<div id=title><div class="r_pic" style="margin-top:16px;"><a href=""><img border=0 src="images/jian.gif"></a></div><div class="r_pic"><a href=""><img border=0 src="images/add.gif"></a></div></div>
+						<div id=title class="title"><div class="r_pic" style="margin-top:16px;"><a href=""><img border=0 src="images/jian.gif"></a></div><div class="r_pic"><a href=""><img border=0 src="images/add.gif"></a></div></div>
 						<div id=content>
 							<div class=cl><a href="">·[生活] 《锦衣卫》春节档功夫大战</a></div>
 							<div class=cl><a href="">·[热剧] 影迷评价最高电影TOP50</a></div>
@@ -335,7 +363,7 @@
 						</div>
 				</div>
 				<div id=m_r_b>
-					<div id=hg>
+					<div id=hg class="title">
 						<div class=pic2 style="margin-left:80px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div>
 					</div>
 					<div class=pic><a href=""><img border=0 src="images/1.jpg"></a></div>
@@ -350,7 +378,7 @@
 					<div class=cl><a class="idft3" href="">[最新发生]</a><a class="idft4" href=""> 刘德华张学友经典</a></div>
 				</div>
 				<div id=m_r_b2>
-					<div style="width:279px; height:25px; float:left; display:inline;"></div>
+					<div style="width:279px; height:25px; float:left; display:inline;" class="title"></div>
 					<div class=category><a href="#">财经新闻</a></div>
 					<div class=category><a href="#">科教新闻</a></div>
 					<div class=category><a href="#">社会新闻</a></div>
@@ -360,6 +388,7 @@
 					<div class=category><a href="#">体育新闻</a></div>
 					<div class=category><a href="#">各地新闻</a></div>
 					<div class=category><a href="#">军事新闻</a></div>
+				</div>
 				</div>
 				<div id=upload>
 					<a href="upload.html"><img border=0 src="images/upload.jpg"></a>

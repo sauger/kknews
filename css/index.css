@@ -87,3 +87,5 @@
 #b_b{width:1002px; height:54px; text-align:center; margin-top:10px; margin-bottom:10px; float:left; display:inline;}
 
 .idft3{color:#0065A9}
+.category_span { cursor:pointer}
+.title{cursor:move;}
