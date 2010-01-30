@@ -47,7 +47,7 @@
 <div id="menu" style="display:none;">
 	<div id="menul1">
 		<div id="menubox">
-			<div class="menu_box_box"><a href="">最新发生</a></div>
+			<div class="menu_box_box menu_selected"><a href="">最新发生</a></div>
 			<div class="menu_box_box"><a href="">本地</a></div>
 			<div class="menu_box_box"><a href="">财经</a></div>
 			<div class="menu_box_box"><a href="">科教</a></div>
@@ -398,8 +398,12 @@
 				popmen = '';
 			}
 		});
-		
-		
+		$('.menu_box_box').mouseover(function(){
+			$(this).css('background','#339900');
+		});
+		$('.menu_box_box').mouseout(function(){
+			$(this).css('background','');
+		});
 		
 	});
 	Masthead.writeSwf();

@@ -85,3 +85,26 @@
 #b_t #b_t_cl{width:1002px; line-height:40px; margin:0 auto;}
 #b_t #b_t_cl a{color:#ffffff; text-decoration:none;}
 #b_b{width:1002px; height:54px; text-align:center; margin-top:10px; margin-bottom:10px; float:left; display:inline;}
+#screen_top{
+	width:100%;
+	height:110px;
+	top:0px;
+	left:0px;
+	background-color:#000;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	position:absolute;
+}
+
+#screen_bottom{
+	width:100%;
+	height:110px;
+	top:545px;
+	left:0px;
+	background-color:#000;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	position:absolute;
+}
