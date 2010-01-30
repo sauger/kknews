@@ -1,7 +1,5 @@
 *.bak
-*.flv
 *.png
-*.swf
 .project
 .tmp_*
 Thumbs.db
