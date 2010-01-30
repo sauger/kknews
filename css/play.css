@@ -70,7 +70,7 @@
 #m_b_l_b .comment .c_bottom a{color:#006699; text-decoration:none;}
 #m_b_l_b .page{height:32px; margin-top:20px; line-height:22px; text-align:center; float:left; display:inline;}
 #m_b_l_b .page .num{width:18px; height:20px; margin-right:10px; border:1px solid #8997B0; float:left; display:inline;}
-#m_b_l_b .page a{#666666; text-decoration:none;}
+#m_b_l_b .page a{color:#666666; text-decoration:none;}
 #m_b_r{width:279px; height:791px; margin-top:10px; background:url('../images/video_show_b_r_bg.jpg') no-repeat; float:right; display:inline;}
 #m_b_r #title{width:250px; height:16px; margin-top:10px; margin-left:10px; font-size:14px; font-weight:bold; line-height:16px; float:left; display:inline;}
 #m_b_r .category{width:75px; height:23px; margin-top:15px; margin-left:14px; line-height:23px; text-align:center; background:url('../images/category_bg.jpg') no-repeat; float:left; display:inline;}
