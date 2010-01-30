@@ -109,5 +109,10 @@ $(function(){
 		}
 		$(this).removeClass('ssfont3_sel');
 	});
+	$('.digg').click(function(){
+		var num=$(this).html();
+		num=parseInt(num)+1;
+		$(this).html(num);
+	});
 	
 });
