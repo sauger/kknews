@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="zh-cn" lang="zh-cn">
+	<head>
+		<title>网络电视台 :: 龙卷风客户端</title>
+		<meta name="description" content="网络电视台 :: 龙卷风客户端" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="scripts/swfobject.js"></script>
+		</script>
+
+        <style type="text/css">
+        html, body{
+			margin: 0; 
+			padding: 0;
+			height: 99.88%;
+		}
+		body {
+			height: 100%;
+			background-color: #000;
+			color: #FFF;
+			text-align: center;
+		}
+		html {
+			/*Start hiding from IE Mac \*/
+		
+			width: 100%;
+			overflow: hidden;
+		
+			/*Stop hiding from IE Mac */
+		}
+		
+		div#container {
+			height: 100%;
+			width: 100%;
+			min-height: 580px;
+			min-width: 950px;
+		}
+		a:link, a:visited, a:active { text-decoration: underline; color:#E58909 }
+		a:hover { text-decoration: none; color:#FFFFFF }
+		
+        </style>
+	</head>
+	<body onload="this.focus();">
+		<div id="container"></div>
+        <script language="javascript">
+        var s1 = new SWFObject("kknews.swf","ply","100%","100%","9","#fffff");
+		s1.addParam("allowfullscreen","true");
+		s1.addParam("allowscriptaccess","always");
+		s1.addParam("scale","showall");
+		s1.addParam("wmode","opaque");
+		s1.write("container");
+
+        </script>
+
+	</body>
+</html>

@@ -1,0 +1,10 @@
+#imiddle {}
+#m_l1{float:left;width:181px;height:429px; margin-top:12px; background:url(/images/hyhd/left_bar1.jpg); overflow:hidden; font-family:"宋体"}
+.m_l2_item{width:180px;height:48px; float:left;}
+.m_l2_item_text{float:left;margin-left:55px;margin-top:13px;font-size:14px;font-family:"黑体"}
+#m_l2{width:812px;height:774px;float:left;background:url(/images/hyhd/right.jpg);margin-left:7px;margin-top:12px;}
+#m_l2_top{width:800px;height:40px;background:url(/images/hyhd/kktv7_r2_c2.jpg);float:left;}
+.m_l2_item1{float:left;width:780px;margin-left:10px; border-bottom:1px solid #CCC;padding-bottom:15px;margin-top:20px;}
+.ilable{float:left;width:150px;text-align:right; font-family:"黑体"; font-size:14px;margin-top:10px;}
+.iinput{margin-left:10px;margin-top:8px;float:left;width:580px;}
+.m_l2_item_text a{color:#000;text-decoration:none;}

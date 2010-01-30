@@ -1,0 +1,23 @@
+
+$(function(){
+	$(".title2").hover(function(){
+		$(".title1").css('background','url("images/title2_bg.gif")');
+		$(".title2").css('background','url("images/title2_bg.gif")');
+		$(".title1").css('color','#666666');
+		$(".title2").css('color','#666666');
+		$(this).css('background','url("images/title1_bg.gif")');
+		$(this).css('color','#333333');
+		$(".context").css('display','none');
+		$(this).next().next().next().next().next().next().next().next().css('display','inline');
+	});
+	$(".title1").hover(function(){
+		$(".title1").css('background','url("images/title2_bg.gif")');
+		$(".title2").css('background','url("images/title2_bg.gif")');
+		$(".title1").css('color','#666666');
+		$(".title2").css('color','#666666');
+		$(this).css('background','url("images/title1_bg.gif")');
+		$(this).css('color','#333333');
+		$(".context").css('display','none');
+		$(this).next().next().next().next().next().next().next().next().css('display','inline');
+	});
+})
