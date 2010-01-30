@@ -1,8 +1,10 @@
 .ssfont1{ font-size:14px; color:#000000; font-weight:bold;}
 .ssfont2{ font-size:12px; color:#999999;}
-.ssfont3{ font-size:12px; color:#666666;}
+.ssfont3{ font-size:12px; color:#666666;background:#FFF;}
 .ssfont4{ font-size:14px; color:#095EB3; font-weight:bold;}
+.ssfont3_sel{ font-size:12px; color:#666666; background:#CCC}
 
+#imiddle div div a{ text-decoration:none;}
 
 
 

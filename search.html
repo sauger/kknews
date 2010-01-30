@@ -9,6 +9,7 @@
 	<script type="text/javascript" language="javascript" src="javascript/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" language="javascript" src="javascript/zh.js"></script>
 	<script type="text/javascript" src="javascript/jquery-ui-1.7.2.custom.min.js"></script>
+	<script type="text/javascript" src="javascript/search.js"></script>
 	
     <link href="css/sousuo.css" rel="stylesheet" type="text/css">
 </head>
@@ -41,36 +42,37 @@
                 <div id="sswz1"><a class="ssfont2"> 地震 </a></div>
             <div id="sswz2">
             	<div id="sswz3"><a class="ssfont1">时间范围</a></div>
-                <div id="sswz4"><a class="ssfont3">30”</a><a class="ssfont2">（123）</a></div>
-                <div id="sswz4"><a class="ssfont3">1’30”</a><a class="ssfont2">（987）</a></div>
-                <div id="sswz4"><a class="ssfont3">5’00”</a><a class="ssfont2">（234）</a></div>
-                <div id="sswz4"><a class="ssfont3">10’00”</a><a class="ssfont2">（98）</a></div>
-                <div id="sswz4"><a class="ssfont3">30’00”</a><a class="ssfont2">（370）</a></div>
+                <div id="sswz4"><a class="ssfont3 l1" id="l11" href="#">30”</a><a class="ssfont2">（123）</a></div>
+                <div id="sswz4"><a class="ssfont3 l1" id="l12" href="#">1’30”</a><a class="ssfont2">（987）</a></div>
+                <div id="sswz4"><a class="ssfont3 l1" id="l13" href="#">5’00”</a><a class="ssfont2">（234）</a></div>
+                <div id="sswz4"><a class="ssfont3 l1" id="l14" href="#">10’00”</a><a class="ssfont2">（98）</a></div>
+                <div id="sswz4"><a class="ssfont3 l1" id="l15" href="#">30’00”</a><a class="ssfont2">（370）</a></div>
             </div>
             <div id="sswz2">
             	<div id="sswz3"><a class="ssfont1">频道分类</a></div>
-                <div id="sswz4"><a class="ssfont3">本地新闻</a><a class="ssfont2">（45）</a></div>
-                <div id="sswz4"><a class="ssfont3">各地新闻</a><a class="ssfont2">（23）</a></div>
-                <div id="sswz4"><a class="ssfont3">全球新闻</a><a class="ssfont2">（897）</a></div>
-                <div id="sswz4"><a class="ssfont3">社会</a><a class="ssfont2">（234）</a></div>
-                <div id="sswz4"><a class="ssfont3">体育</a><a class="ssfont2">（1236）</a></div>
-                <div id="sswz4"><a class="ssfont3">娱乐节目</a><a class="ssfont2">（56）</a></div>
-                <div id="sswz4"><a class="ssfont3">科学教育</a><a class="ssfont2">（98）</a></div>
-                <div id="sswz4"><a class="ssfont3">财经</a><a class="ssfont2">（27）</a></div>
-                <div id="sswz4"><a class="ssfont3">生活</a><a class="ssfont2">（27）</a></div>
-                <div id="sswz4"><a class="ssfont3">更多</a><a class="ssfont2">（27）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l21" href="#">本地新闻</a><a class="ssfont2">（45）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l22" href="#">各地新闻</a><a class="ssfont2">（23）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l23" href="#">全球新闻</a><a class="ssfont2">（897）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l24" href="#">社会</a><a class="ssfont2">（234）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l25" href="#">体育</a><a class="ssfont2">（1236）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l26" href="#">娱乐节目</a><a class="ssfont2">（56）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l27" href="#">科学教育</a><a class="ssfont2">（98）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l28" href="#">财经</a><a class="ssfont2">（27）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l29" href="#">生活</a><a class="ssfont2">（27）</a></div>
+                <div id="sswz4"><a class="ssfont3 l2" id="l210" href="#">更多</a><a class="ssfont2">（27）</a></div>
               </div>
             <div id="sswz2">
-            	<div id="sswz3"><a class="ssfont1">播放时长</a></div>
-                <div id="sswz4"><a class="ssfont3">1-5分钟</a><a class="ssfont2">（897）</a></div>
-                <div id="sswz4"><a class="ssfont3">5-30分钟</a><a class="ssfont2">（345）</a></div>
-                <div id="sswz4"><a class="ssfont3">1小时之内</a><a class="ssfont2">（29）</a></div>
-                <div id="sswz4"><a class="ssfont3">1-2小时</a><a class="ssfont2">（50）</a></div>
-                <div id="sswz4"><a class="ssfont3">更长时间</a><a class="ssfont2">（37）</a></div>
+            	<div id="sswz3"><a class="ssfont1">上传时间</a></div>
+                <div id="sswz4"><a class="ssfont3 l3" id="l31" href="#">1-5分钟</a><a class="ssfont2">（897）</a></div>
+                <div id="sswz4"><a class="ssfont3 l3" id="l32" href="#">5-30分钟</a><a class="ssfont2">（345）</a></div>
+                <div id="sswz4"><a class="ssfont3 l3" id="l33" href="#">1小时之内</a><a class="ssfont2">（29）</a></div>
+                <div id="sswz4"><a class="ssfont3 l3" id="l34" href="#">1-2小时</a><a class="ssfont2">（50）</a></div>
+                <div id="sswz4"><a class="ssfont3 l3" id="l35"  href="#">更长时间</a><a class="ssfont2">（37）</a></div>
                 </div>
             </div>
             <div id="ssnr1">
-            	<div id="ssnr2">
+            	
+            	<div id="ssnr2" class="ssnrcls" num="0">
                	  <div id="ssnr3"><img src="images/sspic2.jpg"></div>
                     <div id="ssnr4">
                     	<div id="ssnr5"><a class="ssfont4">电视新闻台第6集</a> </div>
@@ -84,7 +86,8 @@
                     </div>
                     <div id="ssnr8"><img src="images/sspic3.jpg"></div>
                 </div>
-                <div id="ssnr2">
+				
+                <div id="ssnr2" class="ssnrcls" num="1">
                	  <div id="ssnr3"><img src="images/sspic5.jpg"></div>
                     <div id="ssnr4">
                     	<div id="ssnr5"><a class="ssfont4">罗荣桓 罗帅为何不与毛泽东合影</a> </div>
@@ -98,7 +101,8 @@
                     </div>
                     <div id="ssnr8"><img src="images/sspic3.jpg"></div>
                 </div>
-                <div id="ssnr2">
+				
+                <div id="ssnr2" class="ssnrcls" num="2">
                	  <div id="ssnr3"><img src="images/sspic6.jpg"></div>
                     <div id="ssnr4">
                     	<div id="ssnr5"><a class="ssfont4">总统级女保镖 边梅</a> </div>
@@ -112,7 +116,8 @@
                     </div>
                     <div id="ssnr8"><img src="images/sspic3.jpg"></div>
                 </div>
-                <div id="ssnr2">
+				
+                <div id="ssnr2" class="ssnrcls" num="3">
                	  <div id="ssnr3"><img src="images/sspic7.jpg"></div>
                     <div id="ssnr4">
                     	<div id="ssnr5"><a class="ssfont4">谁是连续24年登陆央视春晚的相声王</a> </div>
@@ -126,7 +131,8 @@
                     </div>
                     <div id="ssnr8"><img src="images/sspic3.jpg"></div>
                 </div>
-                <div id="ssnr2">
+				
+                <div id="ssnr2" class="ssnrcls" num="4">
                	  <div id="ssnr3"><img src="images/sspic8.jpg"></div>
                     <div id="ssnr4">
                     	<div id="ssnr5"><a class="ssfont4">足协工作人员导演假球案</a> </div>
