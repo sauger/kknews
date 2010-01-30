@@ -38,7 +38,7 @@ $(function(){
 		   $('.l2').parent().show();
 		}else{
 		   key1 = $(this).attr('id');
-		   $('#l23,#l25,#l28,#l210,#l32,#l33').parent().hide();
+		   $('#l23,#l25,#l210,#l32,#l33').parent().hide();
 		}
 		
 		$('.l1').not(this).removeClass('ssfont3_sel');
