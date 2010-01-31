@@ -92,20 +92,20 @@ $(function(){
 	});
 	$('.l1').mouseout(function(){
 		if($(this).attr('id') == key1){
-			exit;
+			return;
 		}
 		$(this).removeClass('ssfont3_sel');
 	});
 	
 	$('.l2').mouseout(function(){
 		if($(this).attr('id') == key2){
-			exit;
+			return;
 		}
 		$(this).removeClass('ssfont3_sel');
 	});
 	$('.l3').mouseout(function(){
 		if($(this).attr('id') == key3){
-			exit;
+			return;
 		}
 		$(this).removeClass('ssfont3_sel');
 	});
