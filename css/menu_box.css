@@ -1,7 +1,7 @@
 
 .menu_box_box{width:160px; height:30px; padding-left:5px; line-height:30px; text-align:left; font-weight:bolder; float:left; display:inline;}
 .menu_box_box a{color:#CAC9C9; text-decoration:none;}
-.menu_box_box a:hover{color:#99CC33;}
+.menu_box_box a:hover{color:#FFF;}
 
 .pop_box{width:330px; height:140px; margin-top:15px; margin-left:35px; float:left; display:inline;}
 .pop_line{width:300px; height:18px; line-height:18px; float:left; display:inline;}

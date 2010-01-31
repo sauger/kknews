@@ -77,11 +77,21 @@
 			</div>
 			<div id=t_b>
 				<div id=t_b_l>
-					<a href="" style="border-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
-					<a href=""   id="menu2">最新发生</a>
-					<a href=""  id="menu3">最多点击</a>
-					<a href=""  id="menu4">热门话题</a>
-					<a href=""  id="menu5">公民新闻</a>
+					<div class="menu_item_box">
+						<a href="" style="border-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""   id="menu2">最新发生</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu3">最多点击</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu4">热门话题</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu5">公民新闻</a>
+					</div>
 				</div>
 				<div id="search">
 					<input type="text"><a href="search.html" id=button></a>	
@@ -429,20 +439,20 @@
 			if (popmen == $(this).attr('id')) return;
 			popmen = $(this).attr('id');
 			if($('#menu').css('display') != 'none'){
-				$('#menu').hide('clip');
+				$('#menu').hide('blind');
 			}			
 			$('#menu').show('blind');
 			
 		});
 		
-		$("#m_flash1").mouseover(function(){
+		$("#menubox").mouseleave(function(){
 			if($('#menu').css('display') != 'none'){
 				$('#menu').hide('blind');
 				popmen = '';
 			}
 		});
 		$('.menu_box_box').mouseover(function(){
-			$(this).css('background','#339900');
+			$(this).css('background','#0033CC');
 		});
 		$('.menu_box_box').mouseout(function(){
 			$(this).css('background','');
