@@ -20,4 +20,10 @@ $(function(){
 		$(".context").css('display','none');
 		$(this).next().next().next().next().next().next().next().next().css('display','inline');
 	});
+	$(function(){
+		$(".title1").css('background','url("images/title1_bg.gif")');
+		$(".title2").css('background','url("images/title2_bg.gif")');
+		$(".title1").css('color','#666666');
+		$(".title2").css('color','#666666');
+	});
 })
