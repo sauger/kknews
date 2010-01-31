@@ -72,16 +72,26 @@
 	<div id=ibody>
 		<div id=itop>
 			<div id=t_t>
-				<div id=logo><img src="images/logo.gif"></div>
+				<div id=logo><img src="images/logo.jpg"></div>
 				<div id=t_t_r><a href="">登陆</a>　|　<a href="">注册</a><br><br><br><div class=icon><a href="red.html"><img border=0 src="images/red_icon.jpg"></a></div><div class=icon><a href="green.html"><img border=0 src="images/green_icon.jpg"></a></div><div class=icon><a href="blue.html"><img border=0 src="images/blue_icon.jpg"></a></div><div class=icon><a href="index.html"><img border=0 src="images/black_icon.jpg"></a></div></div>
 			</div>
 			<div id=t_b>
 				<div id=t_b_l>
-					<a href="" style="border-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
-					<a href=""   id="menu2">最新发生</a>
-					<a href=""  id="menu3">最多点击</a>
-					<a href=""  id="menu4">热门话题</a>
-					<a href=""  id="menu5">公民新闻</a>
+					<div class="menu_item_box">
+						<a href="" style="border-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""   id="menu2">最新发生</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu3">最多点击</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu4">热门话题</a>
+					</div>
+					<div class="menu_item_box">
+						<a href=""  id="menu5">公民新闻</a>
+					</div>
 				</div>
 				<div id="search">
 					<input type="text"><a href="search.html" id=button></a>	
@@ -98,8 +108,8 @@
 		<div id=imiddle>	
 			<div id=m_l>
 			<div id=m_l_t>
-					<div id=haha></div>
-					<div class=title1><a href="">新闻</a></div>
+					<img class="xf" style="margin-top:10px; margin-left:80px; float:left; display:inline;" src="images/xf.gif">
+					<div class=title1 style="margin-left:60px;"><a href="">新闻</a></div>
 					<div class=title2><a href="">电视</a></div>
 					<div class=title2><a href="">电台</a></div>
 					<div class=title2><a href="">娱乐</a></div>
@@ -107,21 +117,22 @@
 					<div class=title2><a href="">科教</a></div>
 					<div class=title2><a href="">财经</a></div>
 					<div id=more><a href="">更多>></a></div>
-					<div class=context>
+					
+					<div class=context >
 						<div class=content>
 							<img width="213" height="122" src="images/bkcg1.jpg">
-							<div class=c_title><a href=""><span style="font-weight:bold;">杰夫-布里吉斯　　　　　　23:09</span></a></div>
+							<div class=c_title><a href=""><span style="font-weight:bold;">杰夫-布里吉斯</span>　　　23:09</a></div>
 						  <div class=c_content>所属类型：<a href="">新闻</a><br>所属专业台：<a href="">时事新闻</a></div>
 						</div>
 						<div class=content>
 							<img width="213" height="122" src="images/bkcg2.jpg">
-							<div class=c_title><a href="" id="idft1"><strong>快男超女中歌榜最　　　　　10:22</strong></a></div>
-<div class=c_content>所属类型：<a href="">娱乐</a><br>
-							  所属专业台：<a href="">娱乐新闻</a></div>
+							<div class=c_title><a href="" id="idft1"><span style="font-weight:bold">快男超女中歌榜最</span>　　　10:22</a></div>
+							<div class=c_content>所属类型：<a href="">娱乐</a><br>
+							所属专业台：<a href="">娱乐新闻</a></div>
 						</div>
 						<div class=content>
 							<img width="213" height="122" src="images/bkcg3.jpg">
-							<div class=c_title><a href=""><span style="font-weight:bold;">本山小品再成悬念　　　　　8:43</span></a></div>
+							<div class=c_title><a href=""><span style="font-weight:bold;">本山小品再成悬念</span>　　　8:43</a></div>
 							<div class=c_content>所属类型：<a href="">春晚</a><br>
 							所属专业台：<a href="">国内闻台</a></div>
 						</div>
@@ -230,85 +241,113 @@
 					</div>
 			</div>
 			<div class=m_l_m>
-				<div class=title><div class="styleset"><img src="images/blockstyle.gif"><img src="images/blockstyle.gif"><img src="images/blockstyle.gif"></div><div class="resetstyle"></div></div>
-				<div class=stylecontent>
-					<div class="stylecontext1" style="margin-left:40px;"><input type="checkbox" checked="checked">本地视频新闻</div><div class="stylecontext2"><input type="checkbox">科教视频新闻</div><div class="stylecontext2"><input type="checkbox">社会视频新闻</div><div class="stylecontext2"><input type="checkbox">更多视频新闻</div>
-					<div class="stylecontext2" style="margin-left:40px;"><input type="checkbox">全球视频新闻</div><div class="stylecontext1"><input type="checkbox" checked="checked">生活视频新闻</div><div class="stylecontext2"><input type="checkbox">娱乐视频新闻</div><div class="stylecontext1"><input type="checkbox" checked="checked">体育视频新闻</div>
-					<div class="stylecontext2" style="margin-left:40px;"><input type="checkbox">各地视频新闻</div><div class="stylecontext2"><input type="checkbox">财经视频新闻</div>
-					<div class="stylebutton"><button>确定保存</button></div>
+				<div class=title style="cursor:default"><div class="styleset" style="cursor:pointer;" id="div_styleset"><img src="images/extract.jpg" style="cursor:pointer;" id="img_cfg"></div><div class="resetstyle" id="div_reset" style="cursor:pointer;"></div></div>
+				<div class=stylecontent style="display:none;" id="div_cfg">
+					<div class="stylecontext2" style="margin-left:40px;" index="0">
+						<input type="checkbox" checked="checked"><span class="category_span">本地视频新闻</span>
+					</div>
+					<div class="stylecontext1" index="1">
+						<input type="checkbox"><span class="category_span">科教视频新闻</span>
+					</div>
+					<div class="stylecontext1" index="2">
+						<input type="checkbox"><span class="category_span">社会视频新闻</span>
+					</div>
+					<div class="stylecontext1" index="3">
+						<input type="checkbox"><span class="category_span">更多视频新闻</span>
+					</div>
+					<div class="stylecontext1" style="margin-left:40px;" index="4">
+						<input type="checkbox"><span class="category_span">全球视频新闻</span>
+					</div>
+					<div class="stylecontext2" index="5">
+						<input type="checkbox" checked="checked"><span class="category_span">生活视频新闻</span>
+					</div>
+					<div class="stylecontext1" index="6">
+						<input type="checkbox"><span class="category_span">娱乐视频新闻</span>
+					</div>
+					<div class="stylecontext1" index="7">
+						<input type="checkbox"><span class="category_span">体育视频新闻</span>
+					</div>
+					<div class="stylecontext1" style="margin-left:40px;" index="8">
+						<input type="checkbox"><span class="category_span">各地视频新闻</span>
+					</div><div class="stylecontext1" index="9">
+						<input type="checkbox"><span class="category_span">财经视频新闻</span></div>
+					<div class="stylebutton">
+						<button id="btn_save">确定保存</button>
+					</div>
 				</div>
 			</div>
 			<!-- sortable start -->
 			<div id="sortable">
-				<div class=m_l_m>
-				<div class=title><div class="title_name">公民新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
+				<div class=m_l_m id="m_l_m0">
+				<div class=title><div class="title_name">本地视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" class="img_plus">　<img style="cursor:pointer;" class="img_mine" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
 				<div class=m_context>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b1.jpg" id="pop_img">
-						<div class=c_title><a href="">[蔡嘉妮]</a></div>
-						<div class=c_content><a href="">《剑雨江湖》横店拍摄现场开放媒体探班</a></div>
+						<div class=c_title1><a href="">[蔡嘉妮]</a></div>
+						<div class=c_content1><a href="">《剑雨江湖》横店拍摄现场开放媒体探班</a></div>
 					</div>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b2.jpg">
-						<div class=c_title><a href="">[王树宝]</a></div>
-						<div class=c_content><a href="">巨力集团上市庆典晚会在河北保定举行</a></div>
+						<div class=c_title1><a href="">[王树宝]</a></div>
+						<div class=c_content1><a href="">巨力集团上市庆典晚会在河北保定举行</a></div>
 					</div>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b3.jpg">
-						<div class=c_title><a href="">[詹武明]</a></div>
-						<div class=c_content><a href="">本届格莱美将注定充满感动时刻</a></div>
+						<div class=c_title1><a href="">[詹武明]</a></div>
+						<div class=c_content1><a href="">本届格莱美将注定充满感动时刻</a></div>
 					</div>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b4.jpg">
-						<div class=c_title><a href="">[郑杰]</a></div>
-						<div class=c_content><a href="">臧天朔聚众斗殴案终审结果出炉</a></div>
+						<div class=c_title1><a href="">[郑杰]</a></div>
+						<div class=c_content1><a href="">臧天朔聚众斗殴案终审结果出炉</a></div>
 					</div>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b5.jpg">
-						<div class=c_title><a href="">[喻冰]</a></div>
-						<div class=c_content><a href="">吴奇隆与马雅舒聚少离多，交往5年</a></div>
+						<div class=c_title1><a href="">[喻冰]</a></div>
+						<div class=c_content1><a href="">吴奇隆与马雅舒聚少离多，交往5年</a></div>
 					</div>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b6.jpg">
-						<div class=c_title><a href="">[李春勇]</a></div>
-						<div class=c_content><a href="">刘谦向日本天皇跪拜事件</a></div>
+						<div class=c_title1><a href="">[李春勇]</a></div>
+						<div class=c_content1><a href="">刘谦向日本天皇跪拜事件</a></div>
 					</div>
 				</div>
 				<div class="m_l_m_b"></div>
 			</div>
 			
-			<div class=m_l_m>
-				<div class=title><div class="title_name">公民新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
-				<div class=m_context>
+			<div class=m_l_m id="m_l_m5">
+				<div class=title><div class="title_name">生活视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" class="img_plus">　<img style="cursor:pointer;" src="images/jian.jpg" class="img_mine"></div><div class=more><a href="">更多</a></div></div>
+				<div class="m_context">
 					<div class=m_content>
-						<img width="111" height="83" src="images/b1.jpg" id="pop_img">
-						<div class=c_title><a href="">[杨紫琼眉目含情]</a></div>
-						<div class=c_content><a href="">《剑雨江湖》横店拍摄现场开放媒体探班</a></div>
+						<img width="111" height="83" src="images/b7.jpg">
+						<div class=c_title1><a href="">[威尔]</a></div>
+						<div class=c_content1><a href="">主创莅临蓉城 世界舞王教人跳踢踏</a></div>
+					</div>
+					
+					<div class=m_content>
+						<img width="111" height="83" src="images/b8.jpg">
+						<div class=c_title1><a href="">[魏钰婷]</a></div>
+						<div class=c_content1><a href="">胡歌再次出演电视剧神话</a></div>
 					</div>
 					<div class=m_content>
-						<img width="111" height="83" src="images/b2.jpg">
-						<div class=c_title><a href="">[洪金宝捧场庆典]</a></div>
-						<div class=c_content><a href="">巨力集团上市庆典晚会在河北保定举行</a></div>
+						<img width="111" height="83" src="images/b9.jpg">
+						<div class=c_title1><a href="">[肖若赝]</a></div>
+						<div class=c_content1><a href="">黄山有成旅游热门景点</a></div>
 					</div>
 					<div class=m_content>
-						<img width="111" height="83" src="images/b3.jpg">
-						<div class=c_title><a href="">[杰克逊终身成就]</a></div>
-						<div class=c_content><a href="">本届格莱美将注定充满感动时刻</a></div>
+						<img width="111" height="83" src="images/b10.jpg">
+						<div class=c_title1><a href="">[蔡剑文]</a></div>
+						<div class=c_content1><a href="">费德勒横扫特松加 小将回球艰难</a></div>
 					</div>
 					<div class=m_content>
-						<img width="111" height="83" src="images/b4.jpg">
-						<div class=c_title><a href="">[臧天朔聚众斗殴]</a></div>
-						<div class=c_content><a href="">臧天朔聚众斗殴案终审结果出炉</a></div>
+						<img width="111" height="83" src="images/b11.jpg">
+						<div class=c_title1><a href="">[张义勇]</a></div>
+						<div class=c_content1><a href="">小布33分火箭结束三连败</a></div>
 					</div>
 					<div class=m_content>
-						<img width="111" height="83" src="images/b5.jpg">
-						<div class=c_title><a href="">[吴奇隆不想结婚]</a></div>
-						<div class=c_content><a href="">吴奇隆与马雅舒聚少离多，交往5年</a></div>
-					</div>
-					<div class=m_content>
-						<img width="111" height="83" src="images/b6.jpg">
-						<div class=c_title><a href="">[刘谦谈跪拜]</a></div>
-						<div class=c_content><a href="">网络上盛传一个传闻，说刘谦在日本</a></div>
+						<img width="111" height="83" src="images/b12.jpg">
+						<div class=c_title1><a href="">[沐咭咭]</a></div>
+						<div class=c_content1><a href="">艾弗森23分火力不逊科比</a></div>
 					</div>
 					
 				</div>
@@ -319,8 +358,9 @@
 
 			</div>
 			<div id=m_r>
+				<div id="sortable1">
 				<div id=m_r_t>
-						<div id=title></div>
+						<div id=title class="title"><div class="r_pic" style="margin-top:16px;"><a href="#" class="a_tmp"><img border=0 src="images/jian.gif" id="kb_mine"></a></div><div class="r_pic"><a href="#"  class="a_tmp"><img id="kb_add" border=0 src="images/add.gif"></a></div></div>
 						<div id=content>
 							<div class=cl><a href="">·[生活] 《锦衣卫》春节档功夫大战</a></div>
 							<div class=cl><a href="">·[热剧] 影迷评价最高电影TOP50</a></div>
@@ -333,8 +373,8 @@
 						</div>
 				</div>
 				<div id=m_r_b>
-					<div id=hg>
-						<div class=pic2 style="margin-left:115px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div>
+					<div id=hg class="title">
+						<div class=pic2 style="margin-left:80px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" id="sc_add">　<img id="sc_mine" style="cursor:pointer;" src="images/jian.jpg"></div>
 					</div>
 					<div class=pic><a href=""><img border=0 src="images/1.jpg"></a></div>
 					<div class=pic_content><a class="idft3" href="">[中华博客] </a><a class="idft4" href="">以财经博客为主体，聚集了一批高水平的名家、机构、学者和民间高手</a></div>
@@ -346,6 +386,19 @@
 					<div class=cl><a class="idft3" href="">[热门话题]</a><a class="idft4" href=""> 成龙携《大兵小将》攻贺岁</a></div>
 					<div class=cl><a class="idft3" href="">[博客家园] </a><a class="idft4" href="">三年内可能爆发危机</a></div>
 					<div class=cl><a class="idft3" href="">[最新发生]</a><a class="idft4" href=""> 刘德华张学友经典</a></div>
+				</div>
+				<div id=m_r_b2>
+					<div style="width:279px; height:25px; float:left; display:inline;" class="title"></div>
+					<div class=category><a href="#">财经新闻</a></div>
+					<div class=category><a href="#">科教新闻</a></div>
+					<div class=category><a href="#">社会新闻</a></div>
+					<div class=category><a href="#">全球新闻</a></div>
+					<div class=category><a href="#">生活新闻</a></div>
+					<div class=category><a href="#">娱乐新闻</a></div>
+					<div class=category><a href="#">体育新闻</a></div>
+					<div class=category><a href="#">各地新闻</a></div>
+					<div class=category><a href="#">军事新闻</a></div>
+				</div>
 				</div>
 				<div id=upload>
 					<a href="upload.html"><img border=0 src="images/upload.jpg"></a>
@@ -365,13 +418,13 @@
 		
 		var poped = false;
 		$('#pop_img').hover(function(){
+			$('#pop_l1').css('top',$(this).offset().top-30);
 			$('#pop_l1').show('');
+			//alert($(this).offset().top);
 		});
-		$('#popdiv').mouseout(function(){
-			$("#m_l_m").mouseover(function(){
-				$('#pop_l1').hide('clip');
-				$("#m_l_m").unbind("mouseover");
-			})
+		$('.pop_box').mouseleave(function(){
+			
+			$('#pop_l1').hide('');
 		});
 		
 		$('#close_a').click(function(e){
@@ -386,20 +439,20 @@
 			if (popmen == $(this).attr('id')) return;
 			popmen = $(this).attr('id');
 			if($('#menu').css('display') != 'none'){
-				$('#menu').hide('clip');
+				$('#menu').hide('blind');
 			}			
 			$('#menu').show('blind');
 			
 		});
 		
-		$("#m_flash1").mouseover(function(){
+		$("#menubox").mouseleave(function(){
 			if($('#menu').css('display') != 'none'){
 				$('#menu').hide('blind');
 				popmen = '';
 			}
 		});
 		$('.menu_box_box').mouseover(function(){
-			$(this).css('background','#339900');
+			$(this).css('background','#0033CC');
 		});
 		$('.menu_box_box').mouseout(function(){
 			$(this).css('background','');
