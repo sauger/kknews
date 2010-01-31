@@ -1,5 +1,4 @@
 *.bak
-*.png
 .project
 .tmp_*
 Thumbs.db
