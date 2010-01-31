@@ -165,6 +165,7 @@ $(function(){
 		$('.bbox').mouseleave(function(){
 			$(this).find('.list').hide();
 		});
+		$('.list').unbind('click');
 		$('.list').click(function(){
 			alert('加入播放列表成功');
 		});
