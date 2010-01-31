@@ -22,11 +22,17 @@
 			</div>
 			<div id=t_b>
 				<div id=t_b_l>
-					<a href="" style="borderr-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
-					<a href=""   id="menu2">最新发生</a>
-					<a href=""  id="menu3">最多点击</a>
-					<a href=""  id="menu4">热门话题</a>
-					<a href=""  id="menu5">公民新闻</a>
+					<div class="menu_item_box">
+					<a href="" style="border-bottom:2px solid #23B1DC;" id="menu1">不可错过</a>
+					</div>
+					<div class="menu_item_box">
+					<a href=""   id="menu2">最新发生</a></div>
+					<div class="menu_item_box">
+					<a href=""  id="menu3">最多点击</a></div>
+					<div class="menu_item_box">
+					<a href=""  id="menu4">热门话题</a></div>
+					<div class="menu_item_box">
+					<a href=""  id="menu5">公民新闻</a></div>
 				</div>
 				<div id="search">
 					<input type="text" value="地震"> <a href="search.html" id=button></a>
@@ -36,7 +42,7 @@
         <div id="ssbg">
         	<div id="sspic1">
         		<div id="push_right"><img style="margin-left:10px; float:left;" src="/images/search/r1.png"></div>
-        		<a href=""><img width=267 height=138 border=0 src="images/search_top1.jpg"></a><a href=""><img width=267 height=138 src="images/search_top2.jpg"></a><a href=""><img width=267 height=138 src="images/search_top3.jpg"></a>
+        		<a href=""><img width=267 height=138 border=0 src="images/search/1.jpg"></a><a href=""><img width=267 height=138 src="images/search/2.jpg"></a><a href=""><img width=267 height=138 src="images/search/3.jpg"></a>
 				<div id="push_left"><img style="margin-left:10px; float:left;" src="/images/search/l1.png"></div>
 			</div>
 			
@@ -192,5 +198,7 @@
 			$("#push_left").children().css('margin-left','10px');
 			$("#push_left").children().attr('src','/images/search/l1.png');
 		})
+		
+		
 	})
 </script>
