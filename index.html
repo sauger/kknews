@@ -231,7 +231,7 @@
 					</div>
 			</div>
 			<div class=m_l_m>
-				<div class=title style="cursor:default"><div class="styleset" style="cursor:pointer;" id="div_styleset"><img src="images/extract.jpg" style="cursor:pointer;" id="img_cfg"></div><div class="resetstyle"></div></div>
+				<div class=title style="cursor:default"><div class="styleset" style="cursor:pointer;" id="div_styleset"><img src="images/extract.jpg" style="cursor:pointer;" id="img_cfg"></div><div class="resetstyle" id="div_reset" style="cursor:pointer;"></div></div>
 				<div class=stylecontent style="display:none;" id="div_cfg">
 					<div class="stylecontext2" style="margin-left:40px;" index="0">
 						<input type="checkbox" checked="checked"><span class="category_span">本地视频新闻</span>
@@ -262,14 +262,14 @@
 					</div><div class="stylecontext1" index="9">
 						<input type="checkbox"><span class="category_span">财经视频新闻</span></div>
 					<div class="stylebutton">
-						<button>确定保存</button>
+						<button id="btn_save">确定保存</button>
 					</div>
 				</div>
 			</div>
 			<!-- sortable start -->
 			<div id="sortable">
-				<div class=m_l_m>
-				<div class=title><div class="title_name">本地视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
+				<div class=m_l_m id="m_l_m0">
+				<div class=title><div class="title_name">本地视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" class="img_plus">　<img style="cursor:pointer;" class="img_mine" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
 				<div class=m_context>
 					<div class=m_content>
 						<img width="111" height="83" src="images/b1.jpg" id="pop_img">
@@ -305,9 +305,9 @@
 				<div class="m_l_m_b"></div>
 			</div>
 			
-			<div class=m_l_m>
-				<div class=title><div class="title_name">生活视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div><div class=more><a href="">更多</a></div></div>
-				<div class=m_context>
+			<div class=m_l_m id="m_l_m5">
+				<div class=title><div class="title_name">生活视频新闻</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" class="img_plus">　<img style="cursor:pointer;" src="images/jian.jpg" class="img_mine"></div><div class=more><a href="">更多</a></div></div>
+				<div class="m_context">
 					<div class=m_content>
 						<img width="111" height="83" src="images/b7.jpg">
 						<div class=c_title1><a href="">[威尔]</a></div>
@@ -350,7 +350,7 @@
 			<div id=m_r>
 				<div id="sortable1">
 				<div id=m_r_t>
-						<div id=title class="title"><div class="r_pic" style="margin-top:16px;"><a href=""><img border=0 src="images/jian.gif"></a></div><div class="r_pic"><a href=""><img border=0 src="images/add.gif"></a></div></div>
+						<div id=title class="title"><div class="r_pic" style="margin-top:16px;"><a href="#" class="a_tmp"><img border=0 src="images/jian.gif" id="kb_mine"></a></div><div class="r_pic"><a href="#"  class="a_tmp"><img id="kb_add" border=0 src="images/add.gif"></a></div></div>
 						<div id=content>
 							<div class=cl><a href="">·[生活] 《锦衣卫》春节档功夫大战</a></div>
 							<div class=cl><a href="">·[热剧] 影迷评价最高电影TOP50</a></div>
@@ -364,7 +364,7 @@
 				</div>
 				<div id=m_r_b>
 					<div id=hg class="title">
-						<div class=pic2 style="margin-left:80px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg">　<img style="cursor:pointer;" src="images/jian.jpg"></div>
+						<div class=pic2 style="margin-left:80px;"><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" id="sc_add">　<img id="sc_mine" style="cursor:pointer;" src="images/jian.jpg"></div>
 					</div>
 					<div class=pic><a href=""><img border=0 src="images/1.jpg"></a></div>
 					<div class=pic_content><a class="idft3" href="">[中华博客] </a><a class="idft4" href="">以财经博客为主体，聚集了一批高水平的名家、机构、学者和民间高手</a></div>
@@ -408,13 +408,13 @@
 		
 		var poped = false;
 		$('#pop_img').hover(function(){
+			$('#pop_l1').css('top',$(this).offset().top-30);
 			$('#pop_l1').show('');
+			//alert($(this).offset().top);
 		});
-		$('#popdiv').mouseout(function(){
-			$("#m_l_m").mouseover(function(){
-				$('#pop_l1').hide('clip');
-				$("#m_l_m").unbind("mouseover");
-			})
+		$('.pop_box').mouseleave(function(){
+			
+			$('#pop_l1').hide('');
 		});
 		
 		$('#close_a').click(function(e){
