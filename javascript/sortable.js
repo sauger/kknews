@@ -46,36 +46,36 @@ $(function(){
 	function add_category(caption,id){
 		var str = '<div class=m_l_m id="m_l_m'+ id + '">'
 				+'<div class=title><div class="title_name">'+caption +'</div><div class=pic2><a href=""><img border=0 class="xf" src="images/xf.gif"></a></div><div class="addjian"><img style="cursor:pointer;" src="images/add.jpg" class="img_plus">　<img style="cursor:pointer;" src="images/jian.jpg" class="img_mine"></div><div class=more><a href="">更多</a></div></div>'
-				+'<div class=m_context>'
+				+'<div class="m_context">'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b1.jpg" id="pop_img">'
-				+'		<div class=c_title1><a href="sns.html">[蔡嘉妮]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">《剑雨江湖》横店拍摄现场开放媒体探班</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b7.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[威尔]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">主创莅临蓉城 世界舞王教人跳踢踏</a></div>'
 				+'	</div>'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b2.jpg">'
-				+'		<div class=c_title1><a href="sns.html">[王树宝]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">巨力集团上市庆典晚会在河北保定举行</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b8.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[魏钰婷]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">胡歌再次出演电视剧神话</a></div>'
 				+'	</div>'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b3.jpg">'
-				+'		<div class=c_title1><a href="sns.html">[詹武明]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">本届格莱美将注定充满感动时刻</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b9.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[肖若赝]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">黄山有成旅游热门景点</a></div>'
 				+'	</div>'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b4.jpg">'
-				+'		<div class=c_title1><a href="sns.html">[郑杰]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">臧天朔聚众斗殴案终审结果出炉</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b10.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[蔡剑文]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">费德勒横扫特松加 小将回球艰难</a></div>'
 				+'	</div>'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b5.jpg">'
-				+'		<div class=c_title1><a href="sns.html">[喻冰]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">吴奇隆与马雅舒聚少离多，交往5年</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b11.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="">[张义勇]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">小布33分火箭结束三连败</a></div>'
 				+'	</div>'
 				+'	<div class=m_content>'
-				+'		<img width="111" height="83" src="images/b6.jpg">'
-				+'		<div class=c_title1><a href="sns.html">[李春勇]</a></div>'
-				+'		<div class=c_content1><a href="video.show.html">刘谦向日本天皇跪拜事件</a></div>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b12.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[沐咭咭]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">艾弗森23分火力不逊科比</a></div>'
 				+'	</div>'
 				+'</div>'
 				+'<div class="m_l_m_b"></div>'
@@ -84,6 +84,7 @@ $(function(){
 			$('.img_plus').unbind('click');
 			$('.img_mine').unbind('click');
 			bind_plus_mine();
+			addImageHandler();
 	};
 	
 	
@@ -91,37 +92,38 @@ $(function(){
 	function bind_plus_mine(){
 		$('.img_plus').click(function(){
 			var str = '<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b7.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[威尔]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">主创莅临蓉城 世界舞王教人跳踢踏</a></div>'
-					+'</div>'
-					+'<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b8.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[魏钰婷]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">胡歌再次出演电视剧神话</a></div>'
-					+'</div>'
-					+'<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b9.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[肖若赝]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">黄山有成旅游热门景点</a></div>'
-					+'</div>'
-					+'<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b10.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[蔡剑文]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">费德勒横扫特松加 小将回球艰难</a></div>'
-					+'</div>'
-					+'<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b11.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[张义勇]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">小布33分火箭结束三连败</a></div>'
-					+'</div>'
-					+'<div class=m_content>'
-					+'	<img width="111" height="83" src="images/b12.jpg">'
-					+'	<div class=c_title1><a href="sns.html">[沐咭咭]</a></div>'
-					+'	<div class=c_content1><a href="video.show.html">艾弗森23分火力不逊科比</a></div>'
-					+'</div>';
+				+'		<div class=bbox><img width="111" height="83" src="images/b7.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[威尔]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">主创莅临蓉城 世界舞王教人跳踢踏</a></div>'
+				+'	</div>'
+				+'	<div class=m_content>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b8.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[魏钰婷]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">胡歌再次出演电视剧神话</a></div>'
+				+'	</div>'
+				+'	<div class=m_content>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b9.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[肖若赝]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">黄山有成旅游热门景点</a></div>'
+				+'	</div>'
+				+'	<div class=m_content>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b10.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[蔡剑文]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">费德勒横扫特松加 小将回球艰难</a></div>'
+				+'	</div>'
+				+'	<div class=m_content>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b11.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="">[张义勇]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">小布33分火箭结束三连败</a></div>'
+				+'	</div>'
+				+'	<div class=m_content>'
+				+'		<div class=bbox><img width="111" height="83" src="images/b12.jpg"><div class=list><img  src="images/l.png"></div></div>'
+				+'		<div class=c_title1><a href="sns.html">[沐咭咭]</a></div>'
+				+'		<div class=c_content1><a href="video.show.html">艾弗森23分火力不逊科比</a></div>'
+				+'	</div>'
 					//alert($(this).parent().parent().parent().find('.m_context').attr('class'));
 			$(this).parent().parent().parent().find('.m_context').append(str);
+			addImageHandler();
 		});
 		$('.img_mine').click(function(){
 			$(this).parent().parent().parent().find('.m_context').find('.m_content:lt(6)').remove();
@@ -148,4 +150,23 @@ $(function(){
 	 	$('#div_cfg').hide();
 		$('#img_cfg').attr('src','/images/extract.jpg');
 	 });
+	 
+	 /* play list effection
+	  * 
+	  */
+	 $('.list').hide();
+	 addImageHandler();
+	 function addImageHandler(){
+	 	$('.list').hide();
+	 	$('.bbox').find('img:first').unbind('mouseover');
+	 	$('.bbox').find('img:first').mouseover(function(){
+			$(this).parent().find('.list').show();
+		});
+		$('.bbox').mouseleave(function(){
+			$(this).find('.list').hide();
+		});
+		$('.list').click(function(){
+			alert('加入播放列表成功');
+		});
+	 }
 });
