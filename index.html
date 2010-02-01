@@ -75,28 +75,31 @@
 				<div id=logo><img src="images/logo.jpg"></div>
 				<div id=t_t_r><a href="">登陆</a>　|　<a href="">注册</a><br><br><br><div class=icon><a href="red.html"><img border=0 src="images/red_icon.jpg"></a></div><div class=icon><a href="green.html"><img border=0 src="images/green_icon.jpg"></a></div><div class=icon><a href="blue.html"><img border=0 src="images/blue_icon.jpg"></a></div><div class=icon><a href="index.html"><img border=0 src="images/black_icon.jpg"></a></div></div>
 			</div>
-			<div id=t_b>
+													<div id=line style="width:990px; height:1px; background:#000000; margin:0 auto; margin-top:38px;"></div>
+
+			<div id=t_b style="margin-top:-38px;">
 				<div id=t_b_l>
 					<div class="menu_item_box">
-						<a href="" style="border-bottom:2px solid #23B1DC;"  id="menu1">不可错过</a>
+						<a href="" id="menu1"  class="top_menu">不可错过</a>
 					</div>
 					<div class="menu_item_box">
-						<a href=""   id="menu2">最新发生</a>
+						<a href=""   id="menu2" class="top_menu">最新发生</a>
 					</div>
 					<div class="menu_item_box">
-						<a href=""  id="menu3">最多点击</a>
+						<a href=""  id="menu3"  class="top_menu">最多点击</a>
 					</div>
 					<div class="menu_item_box">
-						<a href=""  id="menu4">热门话题</a>
+						<a href=""  id="menu4"  class="top_menu">热门话题</a>
 					</div>
 					<div class="menu_item_box">
-						<a href=""  id="menu5">公民新闻</a>
+						<a href=""  id="menu5"  class="top_menu">公民新闻</a>
 					</div>
 				</div>
 				<div id="search">
 					<input type="text"><a href="search.html" id=button></a>	
 				</div>
 			</div>
+
 		</div>
 <div style="width:100%; height:415px; background:url(images/b.jpg); clear:both;">		
 		<div id=m_flash1 style="width:100%;">
@@ -105,7 +108,7 @@
 				      <param name=movie value="3d_curve_wall.swf">
 				      <param name=quality value=high>
 				      <param name="wmode" value="transparent">
-				      <embed src="3d_curve_wall.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1000px" height="350px" wmode="transparent"></embed>
+				      <embed src="3d_curve_wall.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1000px" height="350px" wmode="opaque"></embed>
 				    </object>
 			</div>
 			<!-- <img src="images/flash1.jpg"> -->
@@ -469,6 +472,24 @@
 			$(this).css('background','');
 		});
 		
+		$('.menu_item_box').mouseover(function(){
+			$(this).css('background','url(images/menubg.jpg)');
+			$('#line').css('background','#ffffff');
+		});
+		
+		$('.menu_item_box').mouseleave(function(){		
+			$("#menubox").mouseleave(function(){
+				$('.menu_item_box').css('background','');
+				$('#line').css('background','#000000');
+			});	
+		});
+		
+		$('.menu_item_box').mouseover(function(){
+			$('.menu_item_box').css('background','');
+			$('#line').css('background','#000000');
+			$(this).css('background','url(images/menubg.jpg)');
+			$('#line').css('background','#ffffff');
+		});
 	});
 	//Masthead.writeSwf();
 </script>
