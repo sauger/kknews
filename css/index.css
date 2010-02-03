@@ -9,9 +9,14 @@
 #t_t_r a{color:#ffffff; text-decoration:none;}
 #t_b{width:1002px; height:38px; margin-top:10px; margin:0 auto;}
 #t_b_l{line-height:20px; float:left; display:inline;margin-left:20px;}
-.menu_item_box{float:left;width:127px; padding-top:10px; text-align:center; height:30px; margin-right:10px; }
+.menu_item_box{float:left;width:130px; padding-top:10px; text-align:center; height:30px; margin-right:9px; }
+.menu_item_box2{float:left;width:130px; padding-top:10px; text-align:center; height:30px; margin-right:9px; }
+.menu_item_box2 span{width:70px; height:20px; margin-left:31px; float:left; display:inline;}
+.menu_item_box2_line{width:65px; height:2px; background:#1756A6;  margin-left:32px; float:left; display:none;}
 
-#t_b_l a{ color:#ffffff; font-weight:bold; text-decoration:none;}
+#t_b_l span{cursor:pointer;  color:#ffffff; font-weight:bold; text-decoration:none;}
+#t_b_l a{color:#ffffff; font-weight:bold; text-decoration:none;}
+
 #search{width:281px; margin-top:6px; float:right; display:inline;}
 #search input{width:180px; height:25px; padding-top:1px; line-height:24px; padding-left:29px; color:#ffffff; border:0px; background:url('../images/input_bg.jpg') no-repeat; float:left; display:inline;}
 #search #button{width:71px; height:26px; border:0px; background:url('../images/button_bg.jpg') no-repeat; float:right; display:inline;}
@@ -47,7 +52,7 @@
 .m_l_m .m_context{width:710px; border-left:1px solid #cccccc; border-right:1px solid #cccccc;  float:left; display:inline;}
 .m_l_m .m_content{width:111px; margin-top:10px; margin-left:6px; float:left; display:inline;}
 .m_l_m .m_content .bbox{width:111px; height:83px; float:left; display:inline;}
-.m_l_m .m_content .bbox .list{width:8px; height:13px; margin-top:-80px; margin-left:100px; cursor:pointer;}
+.m_l_m .m_content .bbox .list{width:8px; height:13px; margin-top:80px; margin-left:100px; cursor:pointer;}
 .m_l_m .c_title1{width:111px; height:16px; line-height:16px; overflow:hidden; float:left; display:inline;}
 .m_l_m .c_title1 a{color:#0065A9; text-decoration:none;}
 .m_l_m .c_title1 a:hover{color:#0065A9; font-weight:bold; text-decoration:none;}

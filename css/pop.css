@@ -2,6 +2,7 @@
 #pop_l2{margin:0 auto;width:1002px;}
 #popdiv {margin-left:120px; width:387px;height:172px;float:left; background:url(../images/popbox.gif)}
 
-#menu{top:110px;position:absolute;width:100%;height:100px;}
-#menul1{margin:0 auto;width:990px;}
-#menubox{width:990px; height:90px;background:url(../images/menu_back.jpg)}
+#menu{top:108px;position:absolute;width:100%;height:344px;}
+#menul1{margin:0 auto; width:990px;}
+#menubox{width:138px; height:344px; margin-left:10px; color:#CAC9C9;  background:url(../images/menu_back.png) no-repeat;float:left; display:inline;}
+#menubox span{cursor:pointer;}

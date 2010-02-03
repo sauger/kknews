@@ -5,9 +5,15 @@
 	<meta http-equiv=Content-Language content=zh-cn>
 	<link href="css/play.css" rel="stylesheet" type="text/css">
 	<title>网络电视台</title>
+	<script type="text/javascript" src="scripts/swfobject.js" language="javascript"></script>
 	<script type="text/javascript" language="javascript" src="javascript/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" language="javascript" src="javascript/zh.js"></script>
 	<script type="text/javascript" language="javascript" src="javascript/film_screen.js"></script>
+	<style type="text/css" media="screen">
+		#m_flash1 {background:transparent url(images/play_bg_hi.jpg) repeat-x scroll 0 0;height:540px;}
+		#screen_bottom {top:710px;}
+		#m_flash1 #m_f {height:540px;}
+	</style>
 </head>
 <body>
 		<div id=itop>
@@ -29,7 +35,15 @@
 			</div>
 		</div>
 		<div id=m_flash1>
-			<div id=m_f><img src="images/play.jpg"></div>
+			<div id=m_f>影片载入中</div>
+			<script type="text/javascript" charset="utf-8">
+				 var s1 = new SWFObject("vidplayer_demo.swf","ply","1000","540","9","#fffff");
+					s1.addParam("allowfullscreen","false");
+					s1.addParam("allowscriptaccess","always");
+					s1.addParam("wmode","transparent");
+					s1.addParam("quality","high");
+					s1.write("m_f");
+			</script>
 		</div>
 		<div id=m_flash2>
 			<div id=m_f>
