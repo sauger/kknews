@@ -88,7 +88,13 @@ $(function(){
 
 	
 	$('.ssfont3').mouseover(function(){
+		if($(this).hasClass('ssfont3_sel')){
+			$(this).addClass('ssfont3_sel2');
+		}
 		$(this).addClass('ssfont3_sel');
+	});
+	$('.ssfont3').mouseout(function(){
+		$(this).removeClass('ssfont3_sel2');
 	});
 	$('.l1').mouseout(function(){
 		if($(this).attr('id') == key1){
