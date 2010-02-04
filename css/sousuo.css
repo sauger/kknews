@@ -1,8 +1,9 @@
 s.ssfont1{ font-size:14px; color:#000000; font-weight:bold;}
 .ssfont2{ font-size:12px; color:#999999;}
-.ssfont3{ font-size:12px; color:#666666;background:#FFF;}
+.ssfont3{height:20px; font-size:12px; color:#666666; padding-left:15px; padding-right:5px; background:#ffffff; float:left;}
 .ssfont4{ font-size:14px; color:#095EB3; font-weight:bold;}
-.ssfont3_sel{ font-size:12px; color:#FFF; background:#339900}
+.ssfont3_sel{height:30px; font-size:12px; color:#ffffff;  background:url(../images/untitled.jpg) no-repeat;}
+.ssfont3_sel2{height:30px; font-size:12px; color:#ffffff;  background:url(../images/untitled2.jpg) no-repeat;}
 
 #imiddle div div a{ text-decoration:none;}
 

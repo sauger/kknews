@@ -52,7 +52,7 @@
 .m_l_m .m_context{width:710px; border-left:1px solid #cccccc; border-right:1px solid #cccccc;  float:left; display:inline;}
 .m_l_m .m_content{width:111px; margin-top:10px; margin-left:6px; float:left; display:inline;}
 .m_l_m .m_content .bbox{width:111px; height:83px; float:left; display:inline;}
-.m_l_m .m_content .bbox .list{width:8px; height:13px; margin-top:80px; margin-left:100px; cursor:pointer;}
+.m_l_m .m_content .bbox .list{width:8px; height:13px; margin-top:-80px; margin-left:100px; cursor:pointer;}
 .m_l_m .c_title1{width:111px; height:16px; line-height:16px; overflow:hidden; float:left; display:inline;}
 .m_l_m .c_title1 a{color:#0065A9; text-decoration:none;}
 .m_l_m .c_title1 a:hover{color:#0065A9; font-weight:bold; text-decoration:none;}
