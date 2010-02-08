@@ -108,3 +108,6 @@
 	opacity: 0.9;
 	position:absolute;
 }
+
+#flash_mar{width:410px; height:20px; text-align:left; overflow:hidden; font-size:14px; position:absolute; color:#00A8FF; line-height:20px;}
+#mar div{height:25px;margin:0;padding:0}
